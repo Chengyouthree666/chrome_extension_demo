@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "程明辉",
+  "version": "1.0.0",
+  "description": "developer @chengyouthree",
+  "background": {
+    "service_worker": "bg.js"
+  },
+  "action": {
+    "default_icon": {
+      "19": "popup.png"
+    },
+    "default_popup": "popup.html",
+    "default_title": "程明辉【chrome extension】"
+  },
+  "icons": {
+    "16": "popup.png",
+    "48": "popup.png",
+    "128": "popup.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["domain.js"]
+    }
+  ],
+  "permissions": ["storage"]
+}
