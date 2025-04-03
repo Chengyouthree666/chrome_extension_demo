@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "程明辉",
+  "name": "chengyouthree",
   "version": "1.0.0",
   "description": "developer @chengyouthree",
   "background": {
@@ -8,20 +8,20 @@
   },
   "action": {
     "default_icon": {
-      "19": "popup.png"
+      "19": "main.png"
     },
-    "default_popup": "popup.html",
-    "default_title": "程明辉【chrome extension】"
+    "default_popup": "main.html",
+    "default_title": "chengyouthree【chrome extension】"
   },
   "icons": {
-    "16": "popup.png",
-    "48": "popup.png",
-    "128": "popup.png"
+    "16": "main.png",
+    "48": "main.png",
+    "128": "main.png"
   },
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
-      "js": ["domain.js"]
+      "js": ["main.js"]
     }
   ],
   "permissions": ["storage"]
